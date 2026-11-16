@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    
+    <!-- Primary Meta Tags -->
+    <title>Balaji | Full-Stack Developer (MERN) &amp; AI/ML Enthusiast</title>
+    <meta name="title" content="Balaji | Full-Stack Developer (MERN) &amp; AI/ML Enthusiast" />
+    <meta name="description" content="Portfolio of Balaji — Full-Stack Developer (MERN) &amp; B.Tech CSE (AI &amp; ML) student. Crafting production-grade, real-time web platforms and AI-driven solutions." />
+    <meta name="keywords" content="Balaji, Full-Stack Developer, MERN Stack, React Developer, Node.js, Express, MongoDB, Next.js, AI/ML, Software Engineer Portfolio, Ghaziabad, AKGEC" />
+    <meta name="author" content="Balaji" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b0f19" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://balaji-portfolio.vercel.app/" />
+    <meta property="og:title" content="Balaji | Full-Stack Developer (MERN) &amp; AI/ML" />
+    <meta property="og:description" content="Explore real-time web apps, MERN platforms, and AI projects built by Balaji. Ready for full-time &amp; internship roles." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://balaji-portfolio.vercel.app/" />
+    <meta property="twitter:title" content="Balaji | Full-Stack Developer (MERN) &amp; AI/ML" />
+    <meta property="twitter:description" content="Explore real-time web apps, MERN platforms, and AI projects built by Balaji. Ready for full-time &amp; internship roles." />
+    <meta property="twitter:image" content="/og-image.png" />
+
+    <!-- Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Script to prevent dark mode flicker -->
+    <script>
+      (function() {
+        const storedTheme = localStorage.getItem('theme');
+        if (storedTheme === 'light') {
+          document.documentElement.classList.remove('dark');
+        } else if (storedTheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          // Default to dark theme as required
+          document.documentElement.classList.add('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-surface-light-muted dark:bg-surface-dark text-slate-900 dark:text-slate-100 font-sans transition-colors duration-200 antialiased selection:bg-brand-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
